@@ -56,12 +56,26 @@ MESSAGES = {
         'input_prompt': "(Press Ctrl+C to interrupt)",
         'no_sh_links': "No .sh links found.",
         'script_done': "Exit successfully"
+    },
+    'xi': {
+        'select_lang': "请选择系统语言" " Please select a system language：",
+        'chinese': "3. 中文窗口",
+        'english': "2. English",
+        'invalid_opt': "无效选项，请重新选择" "Invalid option, please select again",
+        'requesting': "正在请求(尝试 {attempt}/{max_retries})",
+        'retry': "请求失败: {error}",
+        'max_retry': "请求失败(已达到最大重试次数)",
+        'exec_script': "正在执行交互式脚本(尝试 {attempt}/{max_retries})",
+        'input_prompt': "(按 Ctrl+C 可中断)",
+        'no_sh_links': "未找到以 '.sh' 结尾的链接。",
+        'script_done': "退出成功"        
     }
 }
 
 API_URL = {
     'zh': "https://sharechain.qq.com/927a65433ae97c682f5b8c4995394caf",
-    'en': "https://sharechain.qq.com/9c988855e52153afc9e8a63009889b20"
+    'en': "https://sharechain.qq.com/9c988855e52153afc9e8a63009889b20",
+    'xi': "https://sharechain.qq.com/32350fc41484b6ab582a401ab0e2067c"
 }
 TIMEOUT = 30
 MAX_RETRIES = 3
@@ -152,14 +166,18 @@ def 主流程():
             安全打印(MESSAGES[当前语言]['select_lang'])
             安全打印(MESSAGES['zh']['chinese'])
             安全打印(MESSAGES['en']['english'])
+            安全打印(MESSAGES['xi']['chinese'])
             选择 = input("请选择: ").strip()  # 修改了这里的输入提示
             
             if 选择 == '1':
                 当前语言 = 'zh'
                 break
             elif 选择 == '2':
-                当前语言 = 'en'
+                当前语言 = 'en'              
                 break
+            elif 选择 == '3':
+                当前语言 = 'xi'              
+                break                
             else:
                 安全打印(MESSAGES[当前语言]['invalid_opt'], lang=当前语言)
                 time.sleep(1)
