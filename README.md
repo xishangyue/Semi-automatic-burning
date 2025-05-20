@@ -2,6 +2,9 @@
 
 本脚本需联网使用 (This script requires an internet connection)
 
+> **提示 (Tip):**  
+> 本文档中的所有图片均可翻译。若需查看图片中的英文内容，请使用图片翻译工具（如浏览器插件、手机翻译 App 的拍照翻译功能等）。
+
 ## 1. 自动安装 (Automatic Installation)
 
 ```bash
@@ -73,10 +76,7 @@ chmod +x Semi-automatic-burning.sh
 
 ## 自动进入固件配置界面 (Automatically Enter Firmware Configuration Interface)
 
-- 配置主板固件后，输入 `Q Y` 回车 (After configuring the mainboard firmware, enter `Q Y` and press Enter)
-- 自动编译固件 (Automatically compile the firmware)
-
-![固件配置1](./semi-automatic-burning/img/flash9.webp)
+- 配置主板固件后，输入 `Q Y` 回车 (After configuring the
 ![固件配置2](./semi-automatic-burning/img/flash10.webp)
 
 ## 自动查询 ID (Automatically Query ID)
