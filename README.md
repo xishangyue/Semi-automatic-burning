@@ -12,7 +12,7 @@ cd Semi-automatic-burning&&chmod +x Semi-automatic-burning.sh&&./Semi-automatic-
 ## 2. 二次执行 (Re-execution)
 
 ```bash
-./Semi-automatic-burning/Semi-automatic-burning.sh
+cd&&./Semi-automatic-burning/Semi-automatic-burning.sh
 ```
 > 第一次执行会自动安装依赖 (The first execution will automatically install dependencies)
 
