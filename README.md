@@ -5,7 +5,7 @@
 ## 1. 自动安装 (Automatic Installation)
 
 ```bash
-rm -rf ./Semi-automatic-burning&&cd ~&& git clone https://github.com/xishangyue/Semi-automatic-burning.git
+cd&&rm -rf ./Semi-automatic-burning&& cd&& git clone https://github.com/xishangyue/Semi-automatic-burning.git
 cd Semi-automatic-burning&&chmod +x Semi-automatic-burning.sh&&./Semi-automatic-burning.sh
 ```
 
